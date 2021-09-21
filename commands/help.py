@@ -16,19 +16,19 @@ async def help(message, args = [], prefix = 's!') :
 
     elif (args[0] == 'help') :
       wembed = discord.Embed(title=f'`{prefix}help`')
-      wembed.description = f'{prefix}help provides help on using commands. Use `{prefix}help <command>` for help on the command.'
+      wembed.description = f'A command that provides help on using commands. Use `{prefix}help <command>` for help on the command.'
       wembed.set_footer(text='Scheduler')
       await message.channel.send(embed=wembed)
 
     elif (args[0] == 'timezone') :
       wembed = discord.Embed(title=f'`{prefix}timezone`')
-      wembed.description = f'{prefix}timezone lets users set their timezone for scheduling messages. Use it in the format `{prefix}timezone <(±)%H:%M> to get the timezone offset in minutes. If timezone is not set, the bot operates at UTC.'
+      wembed.description = f'A command that lets users set their timezone for scheduling messages. Use it in the format `{prefix}timezone <(±)%H:%M> to get the timezone offset in minutes. If timezone is not set, the bot operates at UTC.'
       wembed.set_footer(text='Scheduler')
       await message.channel.send(embed=wembed)
 
     elif (args[0] == 'prefix') :
       wembed = discord.Embed(title=f'`{prefix}prefix`')
-      wembed.description = f'{prefix}prefix lets users set the prefix to replace `{prefix}`. Use it in the format `{prefix}prefix "<new_prefix>"` with the new prefix in double quotes.'
+      wembed.description = f'A command that lets users set the prefix to replace `{prefix}`. Use it in the format `{prefix}prefix "<new_prefix>"` with the new prefix in double quotes.'
       wembed.set_footer(text='Scheduler')
       await message.channel.send(embed=wembed)
       
